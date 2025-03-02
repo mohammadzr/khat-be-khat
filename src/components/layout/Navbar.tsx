@@ -1,5 +1,7 @@
+"use client";
+
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import CustomLink from "../CustomLink";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import {
@@ -18,7 +20,7 @@ import {
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
-import { cn } from "@/lib/utils";
+import { cn } from "@/src/lib/utils";
 import {
   Book,
   BookOpen,
@@ -66,12 +68,12 @@ const Navbar = ({
       <div className="container mx-auto h-full px-4 flex items-center justify-between">
         {/* Logo and Brand */}
         <div className="flex items-center">
-          <Link to="/" className="flex items-center gap-2">
+          <CustomLink href="/" className="flex items-center gap-2">
             <Book className="h-8 w-8 text-blue-600" />
             <span className="text-xl font-bold text-blue-600 hidden sm:inline-block">
               کتاب‌خانه فارسی
             </span>
-          </Link>
+          </CustomLink>
         </div>
 
         {/* Desktop Navigation */}
@@ -87,7 +89,7 @@ const Navbar = ({
                   <ul className="grid gap-3 p-4 w-[400px] rtl">
                     <li className="row-span-3">
                       <NavigationMenuLink asChild>
-                        <a
+                        <CustomLink
                           className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-blue-500 to-blue-700 p-6 no-underline outline-none focus:shadow-md"
                           href="/summaries"
                         >
@@ -98,12 +100,12 @@ const Navbar = ({
                             مجموعه‌ای از بهترین خلاصه‌های کتاب‌های فارسی و ترجمه
                             شده
                           </p>
-                        </a>
+                        </CustomLink>
                       </NavigationMenuLink>
                     </li>
                     <li>
                       <NavigationMenuLink asChild>
-                        <a
+                        <CustomLink
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-blue-50 focus:bg-blue-50"
                           href="/summaries/popular"
                         >
@@ -113,12 +115,12 @@ const Navbar = ({
                           <p className="line-clamp-2 text-sm leading-snug text-gray-500">
                             پرطرفدارترین خلاصه‌های هفته اخیر
                           </p>
-                        </a>
+                        </CustomLink>
                       </NavigationMenuLink>
                     </li>
                     <li>
                       <NavigationMenuLink asChild>
-                        <a
+                        <CustomLink
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-blue-50 focus:bg-blue-50"
                           href="/summaries/create"
                         >
@@ -128,7 +130,7 @@ const Navbar = ({
                           <p className="line-clamp-2 text-sm leading-snug text-gray-500">
                             خلاصه کتاب مورد علاقه خود را به اشتراک بگذارید
                           </p>
-                        </a>
+                        </CustomLink>
                       </NavigationMenuLink>
                     </li>
                   </ul>
@@ -144,7 +146,7 @@ const Navbar = ({
                   <ul className="grid gap-3 p-4 w-[400px] rtl">
                     <li>
                       <NavigationMenuLink asChild>
-                        <a
+                        <CustomLink
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-blue-50 focus:bg-blue-50"
                           href="/marketplace"
                         >
@@ -154,12 +156,12 @@ const Navbar = ({
                           <p className="line-clamp-2 text-sm leading-snug text-gray-500">
                             مرور تمام کتاب‌های موجود در فروشگاه
                           </p>
-                        </a>
+                        </CustomLink>
                       </NavigationMenuLink>
                     </li>
                     <li>
                       <NavigationMenuLink asChild>
-                        <a
+                        <CustomLink
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-blue-50 focus:bg-blue-50"
                           href="/marketplace/new"
                         >
@@ -169,7 +171,7 @@ const Navbar = ({
                           <p className="line-clamp-2 text-sm leading-snug text-gray-500">
                             کتاب‌های دست دوم خود را برای فروش قرار دهید
                           </p>
-                        </a>
+                        </CustomLink>
                       </NavigationMenuLink>
                     </li>
                   </ul>
@@ -185,7 +187,7 @@ const Navbar = ({
                   <ul className="grid gap-3 p-4 w-[400px] rtl">
                     <li>
                       <NavigationMenuLink asChild>
-                        <a
+                        <CustomLink
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-blue-50 focus:bg-blue-50"
                           href="/groups"
                         >
@@ -195,12 +197,12 @@ const Navbar = ({
                           <p className="line-clamp-2 text-sm leading-snug text-gray-500">
                             مرور تمام گروه‌های مطالعه فعال
                           </p>
-                        </a>
+                        </CustomLink>
                       </NavigationMenuLink>
                     </li>
                     <li>
                       <NavigationMenuLink asChild>
-                        <a
+                        <CustomLink
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-blue-50 focus:bg-blue-50"
                           href="/groups/my"
                         >
@@ -210,12 +212,12 @@ const Navbar = ({
                           <p className="line-clamp-2 text-sm leading-snug text-gray-500">
                             گروه‌های مطالعه که در آن‌ها عضو هستید
                           </p>
-                        </a>
+                        </CustomLink>
                       </NavigationMenuLink>
                     </li>
                     <li>
                       <NavigationMenuLink asChild>
-                        <a
+                        <CustomLink
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-blue-50 focus:bg-blue-50"
                           href="/groups/create"
                         >
@@ -225,7 +227,7 @@ const Navbar = ({
                           <p className="line-clamp-2 text-sm leading-snug text-gray-500">
                             یک گروه مطالعه جدید با دوستان خود ایجاد کنید
                           </p>
-                        </a>
+                        </CustomLink>
                       </NavigationMenuLink>
                     </li>
                   </ul>
@@ -317,13 +319,13 @@ const Navbar = ({
           ) : (
             <>
               <Button variant="outline" size="sm" asChild>
-                <Link to="/login">
+                <CustomLink href="/login">
                   <LogIn className="h-4 w-4 mr-1" />
                   ورود
-                </Link>
+                </CustomLink>
               </Button>
               <Button size="sm" className="hidden sm:flex" asChild>
-                <Link to="/register">ثبت نام</Link>
+                <CustomLink href="/register">ثبت نام</CustomLink>
               </Button>
             </>
           )}
@@ -364,33 +366,33 @@ const Navbar = ({
             </form>
 
             <div className="space-y-2">
-              <Link
-                to="/summaries"
+              <CustomLink
+                href="/summaries"
                 className="flex items-center p-2 hover:bg-gray-100 rounded-md"
               >
                 <BookOpen className="h-5 w-5 mr-2 text-blue-600" />
                 <span>خلاصه‌های کتاب</span>
-              </Link>
-              <Link
-                to="/marketplace"
+              </CustomLink>
+              <CustomLink
+                href="/marketplace"
                 className="flex items-center p-2 hover:bg-gray-100 rounded-md"
               >
                 <ShoppingBag className="h-5 w-5 mr-2 text-blue-600" />
                 <span>فروشگاه کتاب</span>
-              </Link>
-              <Link
-                to="/groups"
+              </CustomLink>
+              <CustomLink
+                href="/groups"
                 className="flex items-center p-2 hover:bg-gray-100 rounded-md"
               >
                 <Users className="h-5 w-5 mr-2 text-blue-600" />
                 <span>گروه‌های مطالعه</span>
-              </Link>
+              </CustomLink>
             </div>
 
             {!user.isAuthenticated && (
               <div className="flex gap-2 pt-2 border-t border-gray-200">
                 <Button className="w-full" asChild>
-                  <Link to="/register">ثبت نام</Link>
+                  <CustomLink href="/register">ثبت نام</CustomLink>
                 </Button>
               </div>
             )}

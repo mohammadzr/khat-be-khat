@@ -1,4 +1,8 @@
+"use client";
+
 import React from "react";
+import CustomLink from "../CustomLink";
+
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Separator } from "../ui/separator";
@@ -166,12 +170,12 @@ const Footer = ({
               <ul className="space-y-2">
                 {section.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
-                    <a
+                    <CustomLink
                       href={link.href}
                       className="text-gray-600 hover:text-blue-600 transition-colors text-sm"
                     >
                       {link.label}
-                    </a>
+                    </CustomLink>
                   </li>
                 ))}
               </ul>
