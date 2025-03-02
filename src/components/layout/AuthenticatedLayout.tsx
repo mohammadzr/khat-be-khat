@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { useAuth } from "@/src/contexts/AuthContext";
+import { useAuth } from "../../contexts/AuthContext";
 
 interface AuthenticatedLayoutProps {
   children: React.ReactNode;

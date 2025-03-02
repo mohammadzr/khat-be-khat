@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { useAuth } from "@/src/contexts/AuthContext";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { useAuth } from "../../contexts/AuthContext";
+import { Button } from "../ui/button";
+import { Input } from "../ui/input";
+import { Label } from "../ui/label";
 import {
   Card,
   CardContent,
@@ -10,8 +10,8 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Alert, AlertDescription } from "@/components/ui/alert";
+} from "../ui/card";
+import { Alert, AlertDescription } from "../ui/alert";
 import { Mail, AlertCircle, ArrowLeft } from "lucide-react";
 import CustomLink from "../CustomLink";
 

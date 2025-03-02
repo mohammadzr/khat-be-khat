@@ -1,9 +1,9 @@
 import React from "react";
-import AdminDashboard from "@/src/components/admin/AdminDashboard";
-import Navbar from "@/src/components/layout/Navbar";
-import Footer from "@/src/components/layout/Footer";
-import ProtectedRoute from "@/src/components/auth/ProtectedRoute";
-import { UserRole } from "@/src/types/user";
+import AdminDashboard from "../components/admin/AdminDashboard";
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
+import ProtectedRoute from "../components/auth/ProtectedRoute";
+import { UserRole } from "../types/user";
 
 const AdminDashboardPage = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
-import ResetPasswordForm from "@/src/components/auth/ResetPasswordForm";
-import Navbar from "@/src/components/layout/Navbar";
-import Footer from "@/src/components/layout/Footer";
+import ResetPasswordForm from "../components/auth/ResetPasswordForm";
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
 
 const ResetPasswordPage = () => {
   return (

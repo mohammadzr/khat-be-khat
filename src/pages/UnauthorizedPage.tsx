@@ -1,7 +1,7 @@
 import React from "react";
-import Unauthorized from "@/src/components/auth/UnauthorizedPage";
-import Navbar from "@/src/components/layout/Navbar";
-import Footer from "@/src/components/layout/Footer";
+import Unauthorized from "../components/auth/UnauthorizedPage";
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
 
 const UnauthorizedPage = () => {
   return (

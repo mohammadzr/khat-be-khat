@@ -1,8 +1,8 @@
 import React from "react";
-import PremiumUpgrade from "@/src/components/auth/PremiumUpgrade";
-import Navbar from "@/src/components/layout/Navbar";
-import Footer from "@/src/components/layout/Footer";
-import ProtectedRoute from "@/src/components/auth/ProtectedRoute";
+import PremiumUpgrade from "../components/auth/PremiumUpgrade";
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
+import ProtectedRoute from "../components/auth/ProtectedRoute";
 
 const PremiumPage = () => {
   return (

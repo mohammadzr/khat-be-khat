@@ -1,7 +1,7 @@
 import React from "react";
-import ForgotPasswordForm from "@/src/components/auth/ForgotPasswordForm";
-import Navbar from "@/src/components/layout/Navbar";
-import Footer from "@/src/components/layout/Footer";
+import ForgotPasswordForm from "../components/auth/ForgotPasswordForm";
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
 
 const ForgotPasswordPage = () => {
   return (

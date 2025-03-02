@@ -1,7 +1,7 @@
 import React from "react";
-import RegisterForm from "@/src/components/auth/RegisterForm";
-import Navbar from "@/src/components/layout/Navbar";
-import Footer from "@/src/components/layout/Footer";
+import RegisterForm from "../components/auth/RegisterForm";
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
 
 const RegisterPage = () => {
   return (

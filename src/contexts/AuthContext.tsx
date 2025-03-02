@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
-import { User, UserRole } from "@/src/types/user";
+import { User, UserRole } from "../types/user";
 import {
   signIn,
   signUp,
@@ -10,7 +10,7 @@ import {
   updateUserProfile,
   AuthError,
   supabase,
-} from "@/src/lib/auth";
+} from "../lib/auth";
 
 interface AuthContextType {
   user: User | null;

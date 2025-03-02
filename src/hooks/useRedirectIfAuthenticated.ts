@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "@/src/contexts/AuthContext";
+import { useAuth } from "../contexts/AuthContext";
 
 export const useRedirectIfAuthenticated = (redirectTo = "/") => {
   const { isAuthenticated, isLoading } = useAuth();

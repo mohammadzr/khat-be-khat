@@ -1,8 +1,8 @@
 import React from "react";
-import Profile from "@/src/components/profile/ProfilePage";
-import Navbar from "@/src/components/layout/Navbar";
-import Footer from "@/src/components/layout/Footer";
-import ProtectedRoute from "@/src/components/auth/ProtectedRoute";
+import Profile from "../components/profile/ProfilePage";
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
+import ProtectedRoute from "../components/auth/ProtectedRoute";
 
 const ProfilePage = () => {
   return (

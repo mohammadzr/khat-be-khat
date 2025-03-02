@@ -20,7 +20,7 @@ import {
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
-import { cn } from "@/src/lib/utils";
+import { cn } from "../../lib/utils";
 import {
   Book,
   BookOpen,
